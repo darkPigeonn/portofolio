@@ -12,7 +12,7 @@ class DetailScreen extends StatelessWidget {
           children: [
             Container(
               color: Colors.blueGrey,
-              height: 200,
+              height: 150,
             ),
             Padding(
               padding: EdgeInsets.all(20),
@@ -41,7 +41,8 @@ class DetailScreen extends StatelessWidget {
                         children: [
                           Text(
                             'Atanasius Ivannoel Rio Aji',
-                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                           Text(
                             'Ngawi , 4 Mei 1998',
@@ -67,7 +68,34 @@ class DetailScreen extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                top: 180,
+                left: 10,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Tentang',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                    child: Text(
+                        'Saya biasa dipanggil Noel. Sejak dibangku SMA, saya sangat tertarik dengan duniat teknologi. Berawal dari kekaguman terhadap orang yang bisa melakukan hacking disitulah saya mulai mengenal dunia teknologi. Kertetarikan ini yang membawa saya untuk mengambil kuliah Informatika disuatu universitas. Selama kuliah saya mulai mengenali proses develop suatu website, aplikasi mobile, bahkan pengelolaan data atau yang biasa disebut data maining mulai saya rasakan pengalamannya. Dari situlah saya semakin hari semakin ingin mendalami teknologi - teknologi terbaru.'),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
